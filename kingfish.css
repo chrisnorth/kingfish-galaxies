@@ -1,0 +1,428 @@
+/* Following are the presentation styles -- edit away! */
+
+body {
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+    color: #ffffff;
+    font-size: 1em;
+    font-family: 'Helvetica Neue','Arial';
+}
+
+/* Outer wrapper */
+
+div.gals{
+    position:relative;
+}
+
+.bgimg{
+    position:absolute;
+    overflow:hidden;
+}
+
+/* Title */
+
+div.title{
+    border: none;
+    display:none;
+    position:absolute;
+    left:0px;
+    top:0px;
+    font-size:1.2em;
+}
+
+span.hi{
+    color:#8eb4e3;
+}
+
+span.kf{
+    color:#8eb4e3;
+}
+
+/* Logo */
+
+div.logo{
+    position:absolute;
+    /*top:1.5em;*/
+    top:5px;
+    left:0px;
+    width:150px;
+    z-index:15;
+}
+
+.logo img{
+    width:250px;
+    border:none;
+}
+
+div.herlogo{
+    position:absolute;
+    /*top:1.5em;*/
+    top:5px;
+    left:150px;
+    width:150px;
+    z-index:15;
+}
+
+.herlogo img{
+    width:250px;
+    border:none;
+}
+
+/* Galaxy images */
+
+div.galimg{
+    border:0px;
+    z-index:10;
+    position:absolute;
+    border: none;
+}
+
+div.galimg a{
+    display:block;
+}
+
+div.galimg img{
+    display:absolute;
+    width:100%;
+    height:100%;
+    border:1px solid #333333;
+}
+
+/* Galaxy selected */
+
+div .galinfo{
+    display:none;
+}
+
+div.galname{
+    display:none;
+    position:absolute;
+    font-size: 1em;
+}
+
+div.galon{
+    z-index:15;
+    /*border:1px solid white;*/
+}
+
+div.galon .galname{
+    display:block;
+    color:#fff;
+    background-color:#000;
+    border:1px solid red;
+    width:auto;
+    white-space:nowrap;
+    z-index:20;
+}
+
+div.galon img{
+    border:1px solid red!important;
+}
+
+/* positioning of labels*/
+.lab-right{
+    /*right:-2px;*/
+}
+
+.lab-left{
+    /*left:0px;*/
+}
+
+.lab-below{
+    bottom:-2px;
+}
+
+.lab-above{
+    top:0px;
+}
+
+/* Tuning fork */
+
+.fork{
+    width:100%;
+    height:100%;
+}
+
+img.active{
+    border: 1px solid white!important;
+    transition:border 250ms;
+    transition-timing-function:linear;
+    /* Firefox 4 */
+    -moz-transition:border 250ms;
+    -moz-transition-timing-function:linear;
+    /* Safari and Chrome */
+    -webkit-transition:border 250ms;
+    -webkit-transition-timing-function:linear;
+    /* Opera */
+    -o-transition:border 250ms;
+    -o-transition-timing-function:linear;
+
+}
+
+/* Fancybox overlay box */
+div.fbouter{
+    display:none;
+}
+
+div.fbinfo{
+    width:450px;
+    overflow:auto;
+    background-color:black;
+    padding-bottom:10px
+}
+
+h1.info{
+    color: #fff;
+    padding-left: 20px;
+    font-family: sans-serif;
+    font-size:2em;
+    padding-top:10px;
+    margin-top:0px;
+}
+
+/* Fancybox info image */
+
+div.infoimg{
+    float:left;
+    border:1px solid white;
+    width:150px;
+    margin-left:10px;
+    background-color:black;
+}
+
+img.infoimg{
+    float: left;
+    width:100%;
+    height:auto;
+    margin-bottom:10px;
+    /*border:1px solid red;*/
+}
+
+img.wsimg{
+    float: left;
+    width:100%;
+    height:auto;
+    /*border:1px solid red;*/
+}
+
+img.imgload{
+    float:left;
+    width:100%;
+    height:auto;
+    border:1px solid red;
+}
+
+.imglabel{
+    font-size:0.8em;
+    padding-top:0px;
+    margin-bottom:0px;
+    margin-top:0px;
+}
+
+/* Fancybox info text */
+
+div.infotxt{
+    float:left;
+    overflow: auto;
+    width:250px;
+    height:100%;
+    margin-left:10px;
+    background-color: #ffffff;
+    padding-left: 10px;
+    padding-right:10px;
+    box-shadow:inset 0 0 10px #000000;
+    -moz-box-shadow:inset 0 0 10px #000000;
+    -webkit-box-shadow:inset 0 0 10px #000000;
+}
+
+p.stat{
+    color:#000000;
+    font-size:0.8em;
+}
+
+span.subt{
+    font-weight:bold;
+}
+
+div.fbclear{
+    clear:both;
+}
+
+/* Help boxes */
+
+.fbhelp-outer{
+    display:none;
+}
+
+.fbhelp{
+    background-color:#000;
+    width:450px;
+    height:auto;
+    padding-bottom:10px;
+}
+
+h1.help{
+    color: #fff;
+    padding-left: 20px;
+    font-family: sans-serif;
+    padding-top:10px;
+    margin-top:0px;
+}
+
+div.helpimg{
+    float:left;
+    width:150px;
+    margin-left:10px;
+}
+
+img.helpimg{
+    float: left;
+    width:100%;
+    height:auto;
+}
+
+p.helpcaption{
+    font-size:0.8em;
+    text-align:center;
+}
+
+.helptxt{
+    float:left;
+    width:250px;
+    margin-left:10px;
+    background-color:#fff;
+    padding: 10px 10px 10px 10px;
+    /*margin: 10px 20px 10px 20px;*/
+    box-shadow:inset 0 0 10px #000000;
+    -moz-box-shadow:inset 0 0 10px #000000;
+    -webkit-box-shadow:inset 0 0 10px #000000;
+}
+
+p.help{
+    color:#000;
+    font-size:0.8em;
+}
+
+p.link{
+    display:none;
+    color:#999;
+    font-size:0.8em;
+}
+
+a{
+    color:#888888;
+}
+
+.helpclear{
+    clear:both;
+}
+
+/* Guide box */
+
+.fbguide-outer{
+    display:none;
+}
+
+.fbguide{
+    background-color:#000;
+    width:600px;
+    height:auto;
+    padding-bottom:10px;
+}
+
+h1.guide{
+    color: #fff;
+    padding-left: 20px;
+    font-family: sans-serif;
+    padding-top:10px;
+    margin-top:0px;
+}
+
+div.guideimg{
+    float:left;
+    width:250px;
+    margin-left:10px;
+}
+
+img.guideimg{
+    float: left;
+    width:100%;
+    height:auto;
+}
+
+p.guidecaption{
+    font-size:0.8em;
+    text-align:center;
+}
+
+.guidetxt{
+    float:left;
+    width:300px;
+    margin-left:10px;
+    background-color:#fff;
+    padding: 10px 10px 10px 10px;
+    /*margin: 10px 20px 10px 20px;*/
+    box-shadow:inset 0 0 10px #000000;
+    -moz-box-shadow:inset 0 0 10px #000000;
+    -webkit-box-shadow:inset 0 0 10px #000000;
+}
+
+p.guide{
+    color:#000;
+    font-size:0.8em;
+}
+
+a{
+    color:#888888;
+}
+
+.guideclear{
+    clear:both;
+}
+
+div.helpbuttons{
+    position:absolute;
+    display:block;
+    right:0px;
+    bottom:0px;
+    z-index:30;
+}
+
+div.guidebox{
+    float:right;
+    right:0px;
+    bottom:0px;
+    border:1px solid white;
+    padding-left:10px;
+    padding-right:10px;
+    background-color: #969696;
+}
+
+a.guidebox{
+    color:#ffffff;
+}
+
+div.fullscreenbox{
+    float:right;
+    margin-right:20px;
+    border:1px solid white;
+    padding-left:10px;
+    padding-right:10px;
+    background-color: #969696;
+}
+
+div.backbox{
+    float:right;
+    margin-right:20px;
+    border:1px solid white;
+    padding-left:10px;
+    padding-right:10px;
+    background-color: #969696;
+    cursor:pointer;
+}
+
+a.fsbox{
+    color:#ffffff;
+}
+
